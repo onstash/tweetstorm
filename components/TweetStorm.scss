@@ -1,0 +1,27 @@
+.tweetstorm-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetstorm-form {
+  padding: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.tweetstorm-tweets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tweetstorm-tweet {
+  display: flex;
+  padding: 0.25%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row ;
+}
