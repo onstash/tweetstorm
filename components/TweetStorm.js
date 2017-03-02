@@ -22,8 +22,8 @@ class TweetStorm extends React.Component {
 
   render() {
     return (
-      <div className="tweetstorm">
-        <form className="tweetstorm">
+      <div className="tweetstorm-container">
+        <form className="tweetstorm-form">
           <textarea
             ref="tweet"
             placeholder="Type your tweet here"
