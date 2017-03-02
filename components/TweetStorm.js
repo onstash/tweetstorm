@@ -3,6 +3,7 @@ const { connect } = require('react-redux');
 const { updateTweetStorm } = require('../redux/actions/tweetStorm');
 const DisplayTweets = require('./DisplayTweets');
 const generateStormFromTweet = require('./utils/tweetStorm');
+require('./TweetStorm.scss');
 
 class TweetStorm extends React.Component {
   handleChange(event) {
