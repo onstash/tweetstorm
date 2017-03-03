@@ -30,7 +30,10 @@ class TweetStorm extends React.Component {
             placeholder="Type your tweet here"
             onChange={ this.handleChange.bind(this) }
           />
-        <DisplayTweets />
+        </div>
+        <div className="tweetstorm-preview">
+          <DisplayTweets />
+        </div>
       </div>
     );
   }
