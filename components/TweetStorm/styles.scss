@@ -1,53 +1,66 @@
-.tweetstorm-container {
+.outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-headings {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.tweetstorm-input {
+.sub-heading {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 1%;
+  align-items: center;
   flex: 1;
 }
 
-.tweetstorm-input textarea {
+.contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.tweet textarea {
   display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 75%;
   height: 100%;
-  width: 100%;
+  resize: height;
+  overflow: hidden;
 }
 
-@media (max-width: 920px) {
-  .tweetstorm-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tweetstorm-input {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    flex: 1;
-  }
-
-  .tweetstorm-input textarea {
-    display: flex;
-    flex: 1;
-    height: 50%;
-    width: 100%;
-  }
-}
-
-.tweetstorm-preview {
+.tweetstorm {
   display: flex;
-  padding: 1%;
-  justify-content: center;
   flex: 1;
-}
-
-.tweetstorm-tweets-title {
-  display: flex;
-  justify-content: center;
-  padding: 1%;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75%;
+  max-height: 75%;
+  align-items: center;
 }
