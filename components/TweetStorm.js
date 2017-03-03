@@ -3,6 +3,7 @@ const { connect } = require('react-redux');
 const { updateTweetStorm } = require('../redux/actions/tweetStorm');
 const DisplayTweets = require('./DisplayTweets');
 const generateStormFromTweet = require('./utils/tweetStorm');
+require('./TweetStorm.scss');
 
 class TweetStorm extends React.Component {
   handleChange(event) {
@@ -22,15 +23,17 @@ class TweetStorm extends React.Component {
 
   render() {
     return (
-      <div className="tweetstorm">
-        <form className="tweetstorm">
+      <div className="tweetstorm-container">
+        <div className="tweetstorm-input">
           <textarea
             ref="tweet"
             placeholder="Type your tweet here"
             onChange={ this.handleChange.bind(this) }
           />
-        </form>
-        <DisplayTweets />
+        </div>
+        <div className="tweetstorm-preview">
+          <DisplayTweets />
+        </div>
       </div>
     );
   }
