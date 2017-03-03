@@ -24,13 +24,12 @@ class TweetStorm extends React.Component {
   render() {
     return (
       <div className="tweetstorm-container">
-        <form className="tweetstorm-form">
+        <div className="tweetstorm-input">
           <textarea
             ref="tweet"
             placeholder="Type your tweet here"
             onChange={ this.handleChange.bind(this) }
           />
-        </form>
         <DisplayTweets />
       </div>
     );
