@@ -1,27 +1,64 @@
 .tweetstorm-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
 }
 
-.tweetstorm-form {
-  padding: 7%;
+.tweetstorm-input {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  padding: 1%;
+  flex: 1;
+}
+
+.tweetstorm-input textarea {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .tweetstorm-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tweetstorm-input {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    flex: 1;
+  }
+
+  .tweetstorm-input textarea {
+    display: flex;
+    flex: 1;
+    height: 50%;
+    width: 100%;
+  }
+}
+
+
+.tweetstorm-preview {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  flex: 1;
+}
+
+.tweetstorm-tweets-container {
+  display: flex;
   flex-direction: column;
 }
 
-.tweetstorm-tweets {
+.tweetstorm-tweets-title {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
 }
 
 .tweetstorm-tweet {
   display: flex;
-  padding: 0.25%;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row ;
+  padding: 1%;
 }
