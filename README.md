@@ -4,7 +4,7 @@ A simple web app to generate tweetstorm from user input text.
 # Installation
 1. Clone this repository
 2. Install packages
-  ```bash
+  ```
   npm install
   ```
 
