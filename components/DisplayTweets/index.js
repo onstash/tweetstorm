@@ -1,7 +1,7 @@
 const React = require('react');
 const { connect } = require('react-redux');
 const DisplayTweet = require('../DisplayTweet');
-
+require('./styles.scss');
 
 const DisplayTweets = ({ tweets }) => {
   if (tweets) {

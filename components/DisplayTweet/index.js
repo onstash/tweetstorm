@@ -1,4 +1,5 @@
 const React = require('react');
+require('./styles.scss');
 
 module.exports = ({ tweet, index }) => {
   if (tweet) {
