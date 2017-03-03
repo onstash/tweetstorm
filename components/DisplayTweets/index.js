@@ -1,18 +1,7 @@
 const React = require('react');
 const { connect } = require('react-redux');
-
-const DisplayTweet = ({ tweet, index }) => {
-  if (tweet) {
-    return (
-      <div className="tweetstorm-tweet">
-        { `${tweet} (${index + 1}/n)` }
-      </div>
-    );
-  }
-  else {
-    return <div className="tweetstorm-tweet" />;
-  }
-};
+const DisplayTweet = require('../DisplayTweet');
+require('./styles.scss');
 
 const DisplayTweets = ({ tweets }) => {
   if (tweets) {
