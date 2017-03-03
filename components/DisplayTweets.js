@@ -5,7 +5,7 @@ const DisplayTweet = ({ tweet, index }) => {
   if (tweet) {
     return (
       <div className="tweetstorm-tweet">
-      { `${tweet} (${index + 1}/n)` }
+        { `${tweet} (${index + 1}/n)` }
       </div>
     );
   }
@@ -17,18 +17,17 @@ const DisplayTweet = ({ tweet, index }) => {
 const DisplayTweets = ({ tweets }) => {
   if (tweets) {
     return (
-      <div className="tweetstorm-tweets">
-      Tweets:
-      {
-        tweets.map((tweet, index) => {
-          return (<DisplayTweet tweet={ tweet } key={ index } index={ index }/>);
-        })
-      }
+      <div className="tweetstorm-tweets-container">
+        {
+          tweets.map((tweet, index) => {
+            return (<DisplayTweet tweet={ tweet } key={ index } index={ index }/>);
+          })
+        }
       </div>
     );
   } else {
     return (
-      <div className="tweetstorm-tweets" />
+      <div className="tweetstorm-tweets-container" />
     );
   }
 };
