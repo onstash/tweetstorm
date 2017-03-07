@@ -1,7 +1,6 @@
 const React = require('react');
 const { connect } = require('react-redux');
 const DisplayTweet = require('../DisplayTweet');
-require('./styles.scss');
 
 const DisplayTweets = ({ tweets }) => {
   if (tweets) {
@@ -28,3 +27,6 @@ const mapStateToProps = state => {
 };
 
 module.exports = connect(mapStateToProps, null)(DisplayTweets);
+if (process.env.NODE_ENV === "development") {
+  module.exports.Internal = DisplayTweets;
+}

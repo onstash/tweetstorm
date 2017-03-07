@@ -9,6 +9,7 @@ const TweetStorm = require('./components/TweetStorm');
 const store = createStore(appReducers, {});
 
 const App = () => {
+  require('./components/styles');
   return (
     <Provider store={ store }>
       <TweetStorm />
