@@ -8,8 +8,7 @@ module.exports = ({ tweet, index }) => {
         { `${tweet} (${index + 1}/n)` }
       </div>
     );
-  }
-  else {
+  } else {
     return <div className="tweetstorm-tweet" />;
   }
 };
