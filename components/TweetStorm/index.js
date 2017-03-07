@@ -1,5 +1,4 @@
 const React = require('react');
-const { connect } = require('react-redux');
 const { updateTweetStorm } = require('../../redux/actions/tweetStorm');
 const DisplayTweets = require('../DisplayTweets');
 const generateStormFromTweet = require('../utils/tweetStorm');
