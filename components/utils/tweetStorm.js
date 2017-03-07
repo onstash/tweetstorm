@@ -1,6 +1,6 @@
 const sentencePattern = new RegExp(/([.?!])\s*(?=[A-Z])/g);
 const sentenceSplitter = text => {
-  return text.replace(sentencePattern, "$1|").split("|")
+  return text.replace(sentencePattern, "$1|").split("|");
 };
 
 const generateStormFromTweet = tweet => {
