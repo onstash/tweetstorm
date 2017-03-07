@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": [ "react" ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "spread": true,
+    "templateStrings": true,
+    "jsx": true
+  },
+  "rules": {
+    "no-var": ["error"],
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": ["error", "never"],
+    "object-shorthand": ["error", "always"],
+    "quote-props": ["error", "as-needed", { "keywords": true }],
+    "semi": ["error", "always"],
+    "no-new-object": ["error"],
+    "no-array-constructor": ["error"],
+    "no-undef": ["error"],
+    "quotes": ["error", "single"],
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-spacing": ["error", "always"],
+    "brace-style": "error",
+    "consistent-return": [0],
+    "key-spacing": [0],
+    "quotes": [0],
+    "new-cap": [0],
+    "no-multi-spaces": [0],
+    "no-shadow": [0],
+    "no-unused-vars": [1],
+    "no-use-before-define": [2, "nofunc"],
+    "react/jsx-no-undef": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1
+  }
+}
