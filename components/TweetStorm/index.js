@@ -3,7 +3,7 @@ const { updateTweetStorm } = require('../../redux/actions/tweetStorm');
 const DisplayTweets = require('../DisplayTweets');
 const generateStormFromTweet = require('../utils/tweetStorm');
 
-const handleChange = event => {
+function handleChange(event) {
   event.preventDefault();
   const { store } = this.context;
   const { tweet } = this.refs;
