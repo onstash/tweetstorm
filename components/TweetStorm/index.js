@@ -2,18 +2,23 @@ const React = require('react');
 const { updateTweetStorm } = require('../../redux/actions/tweetStorm');
 const DisplayTweets = require('../DisplayTweets');
 const generateStormFromTweet = require('../utils/tweetStorm');
-require('./styles.scss');
+
+const handleChange = event => {
+  event.preventDefault();
+  const { store } = this.context;
+  const { tweet } = this.refs;
+  const sanitizedTweet = tweet.value.replace(/\n\s+/g, '');
+  const tweetStorm = generateStormFromTweet(sanitizedTweet);
+  store.dispatch(
+    updateTweetStorm(tweetStorm)
+  );
+};
+
 
 class TweetStorm extends React.Component {
-  handleChange(event) {
-    event.preventDefault();
-    const { store } = this.context;
-    const { tweet } = this.refs;
-    const sanitizedTweet = tweet.value.replace(/\n\s+/g, '');
-    const tweetStorm = generateStormFromTweet(sanitizedTweet);
-    store.dispatch(
-      updateTweetStorm(tweetStorm)
-    );
+  constructor() {
+    super();
+    this.handleChange = handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +39,7 @@ class TweetStorm extends React.Component {
               <textarea
                 ref="tweet"
                 placeholder="Type your tweet here"
-                onChange={ this.handleChange.bind(this) }
+                onChange={ this.handleChange }
               />
             </div>
             <div className="tweetstorm">
