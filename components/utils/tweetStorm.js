@@ -21,13 +21,9 @@ const generateStormFromTweet = tweet => {
         tweetStormTweets.push(sentence);
       }
     } else {
-      const _sentences = sentence.match(/[\s\S]{1, 70}/g);
-      _sentences.map((_sentence, index) => {
-        if (!index) {
-          tweetStormTweets.push(`${_sentence}...`);
-        } else {
-          tweetStormTweets.push(`...${_sentence}...`);
-        }
+      const _sentences = sentence.split(/[\s\S]{1, 70}/g);
+      _sentences.map(_sentence => {
+        tweetStormTweets.push(_sentence);
       });
     }
   });
