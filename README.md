@@ -1,4 +1,4 @@
-# tweetstorm
+# tweetstorm [![Build Status](https://travis-ci.org/thesantosh/tweetstorm.svg?branch=master)](https://travis-ci.org/thesantosh/tweetstorm)
 A simple web app to generate tweetstorm from user input text.
 
 # Installation
