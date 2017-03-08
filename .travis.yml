@@ -1,16 +1,9 @@
 # Config file for automatic testing at travis-ci.org
 
-language: javascript
+language: node_js
 
-node:
+node_js:
   - "6.9.1"
-
-before_install:
-  - sudo apt-get update
-  - sudo dpkg -r runit
-  - sudo apt-get install -y nodejs npm
-  - sudo npm install n
-  - n stable
 
 install:
   - npm install
