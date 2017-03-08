@@ -8,5 +8,10 @@ node_js:
 install:
   - npm install
 
+env:
+  global:
+    - NODE_ENV="development"
+    - TRAVIS_TEST="true"
+
 script:
     - NODE_ENV="development" gulp test
