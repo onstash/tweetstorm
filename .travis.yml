@@ -7,6 +7,7 @@ node:
 
 before_install:
   - sudo apt-get update
+  - sudo dpkg -r runit
   - sudo apt-get install -y nodejs npm
   - sudo npm install n
   - n stable
