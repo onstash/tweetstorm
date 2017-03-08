@@ -1,0 +1,17 @@
+# Config file for automatic testing at travis-ci.org
+
+language: node_js
+
+node_js:
+  - "6.9.1"
+
+install:
+  - npm install
+
+env:
+  global:
+    - NODE_ENV="development"
+    - TRAVIS_TEST="true"
+
+script:
+    - NODE_ENV="development" gulp test
