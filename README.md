@@ -1,4 +1,4 @@
-# tweetstorm [![Build Status](https://travis-ci.org/thesantosh/tweetstorm.svg?branch=master)](https://travis-ci.org/thesantosh/tweetstorm)
+# tweetstorm [![Build Status](https://travis-ci.org/thesantosh/tweetstorm.svg?branch=master)](https://travis-ci.org/thesantosh/tweetstorm) [![Code Climate](https://codeclimate.com/github/thesantosh/tweetstorm/badges/gpa.svg)](https://codeclimate.com/github/thesantosh/tweetstorm) [![Issue Count](https://codeclimate.com/github/thesantosh/tweetstorm/badges/issue_count.svg)](https://codeclimate.com/github/thesantosh/tweetstorm)
 A simple web app to generate tweetstorm from user input text.
 
 # Installation
